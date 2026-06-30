@@ -25,7 +25,7 @@ const scanSteps = [
   { icon: FaCheckCircle, label: 'Generating full report...' },
 ];
 
-const API_BASE = 'https://rank-optima-backend.onrender.com';
+const API_BASE = 'http://localhost:5000';
 
 function getScoreColor(score) {
   if (score >= 80) return '#22c55e';

@@ -1,0 +1,84 @@
+.whyus {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.whyus__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.whyus__header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.whyus__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.whyus__desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.55);
+  max-width: 420px;
+}
+
+.whyus__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.whyus__card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  background: rgba(13,21,38,0.7);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 16px;
+  padding: 1.5rem;
+  transition: border-color 0.3s, transform 0.25s;
+  cursor: default;
+}
+.whyus__card:hover {
+  border-color: rgba(255,255,255,0.14);
+  transform: translateY(-3px);
+}
+
+.whyus__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.whyus__text { flex: 1; }
+
+.whyus__card-title {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 0.35rem;
+}
+
+.whyus__card-desc {
+  font-size: 0.84rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.65;
+}
+
+.whyus__check { flex-shrink: 0; margin-top: 2px; }
+
+@media (max-width: 700px) {
+  .whyus__grid { grid-template-columns: 1fr; }
+  .whyus { padding: 4rem 1.25rem; }
+}

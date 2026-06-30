@@ -1,0 +1,12 @@
+.login-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: var(--navy-950);
+  color: var(--white);
+}
+
+.login-page .page__container {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}

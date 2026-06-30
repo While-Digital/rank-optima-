@@ -1,0 +1,13 @@
+.pricing-page {
+  padding-top: 80px;
+  min-height: 100vh;
+  background: var(--page-bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pricing-page .page__container {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}

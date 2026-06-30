@@ -1,0 +1,105 @@
+.faq {
+  padding: 6rem 2rem;
+  position: relative;
+}
+
+.faq__container {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.faq__header {
+  text-align: center;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.faq__title {
+  font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+  font-weight: 800;
+  letter-spacing: -0.025em;
+}
+
+.faq__desc {
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.5);
+  line-height: 1.6;
+}
+
+.faq__contact {
+  color: #60a5fa;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.faq__list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.faq__item {
+  background: rgba(13,21,38,0.75);
+  border: 1px solid rgba(255,255,255,0.07);
+  border-radius: 14px;
+  overflow: hidden;
+  transition: border-color 0.3s;
+}
+.faq__item.open {
+  border-color: rgba(79,142,255,0.3);
+}
+
+.faq__question {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1.2rem 1.5rem;
+  background: transparent;
+  color: #fff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  font-family: inherit;
+  text-align: left;
+  cursor: pointer;
+  border: none;
+  transition: background 0.2s;
+}
+.faq__question:hover { background: rgba(255,255,255,0.03); }
+
+.faq__icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 8px;
+  background: rgba(79,142,255,0.12);
+  border: 1px solid rgba(79,142,255,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #60a5fa;
+  flex-shrink: 0;
+  transition: background 0.2s;
+}
+.faq__item.open .faq__icon {
+  background: rgba(79,142,255,0.2);
+}
+
+.faq__answer {
+  overflow: hidden;
+}
+.faq__answer p {
+  padding: 0 1.5rem 1.25rem;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.55);
+  line-height: 1.75;
+}
+
+@media (max-width: 480px) {
+  .faq { padding: 4rem 1.25rem; }
+  .faq__question { padding: 1rem 1.1rem; font-size: 0.88rem; }
+  .faq__answer p { padding: 0 1.1rem 1rem; }
+}
